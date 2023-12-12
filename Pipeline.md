@@ -4,8 +4,6 @@
 
 Il classifier legge testo scritto per umani prendendolo da varie sorgenti e restituisce delle triple che riguardano la persona cercata, le triple sono accompagnate da un punteggio che riguarda l'affidabilità della tripla  (e da un punteggio che quantifica quanto la tripla sia affetta da bias?)
 
-
-
 ## CDuce
 
 CDuce si occupa di organizzare le triple creando un grafo di conoscenza compatibile con quello di wikidata, in modo che sia integrabile con le informazioni raccolte e formalizzate dallo scrittore dell'articolo.
@@ -34,6 +32,4 @@ Senza creare quasi nessuna gerarchia si possono usare esclusivamente le informaz
 
 ## Ad alto livello
 
-
-
-<img src="Pictures/pipeline.svg" title="" alt="" width="1029">
+<img title="" src="Pictures/pipeline_white.svg" alt="" width="983">
