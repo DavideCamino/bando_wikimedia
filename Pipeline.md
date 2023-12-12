@@ -36,4 +36,4 @@ Senza creare quasi nessuna gerarchia si possono usare esclusivamente le informaz
 
 
 
-<img src="file:///home/dadi/Documents/Scuola/Informatica/Triennale/Tesi/git/bando_wikimedia/Pictures/pipeline.svg" title="" alt="" width="1029">
+<img src="Pictures/pipeline.svg" title="" alt="" width="1029">
