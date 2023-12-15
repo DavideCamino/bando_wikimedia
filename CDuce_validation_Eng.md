@@ -4,7 +4,7 @@
 
 $\mathbb{C}$Duce allows the developer to describe the structure of an XML document by designing a type for each kind of node we want to represent, and by describing which nodes can be its children, via a list of the types of admissible children nodes. 
 
-##### Example
+##### An example
 
 ```ocaml
 type Class = <owl:Class rdf:about=String> [ ClassAtt * ]
@@ -18,13 +18,13 @@ type Label    = <rdfs:label xml:lang=String> String
 type Note     = <skos:scopeNote xml:lang=String> String
 ```
 
-The example above shows how we describe a class by specifying the tag opening the element, and by supplying a list of possible attributes for the class. Any element that respects such a structure is identified as a class.
+The example above shows how we describe a 'Class' type by specifying the tag opening the element, and by supplying a list of possible attributes for 'Class'. Any element that respects such a structure is identified as a 'Class'.
 
 ## Validation
 
-If we describe the ontology structure of interest with CDuce types, we can start from any XML document and verify if its structure is compatible with the expected one. This verification can be done with a runtime cast. If the cast fails, it raises an exception showing the exact point in the XML document that is incorrect. 
+If we describe the ontology structure of interest with a CDuce type, we can verify if the structure of any XML document is compatible with the expected one, described by the CDuce type. This verification can be done with a runtime cast. If the cast fails, it raises an exception showing the exact incorrect point in the XML document. 
 
-This high-level procedure is then useful to validate any knowledge base expressed in XML, with respect to a given structure described via CDuce types.
+This high-level procedure is useful to validate any knowledge base expressed in XML, with respect to a given structure described via a CDuce type.
 
 
 ## Transformation
