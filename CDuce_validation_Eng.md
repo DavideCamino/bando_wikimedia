@@ -29,21 +29,23 @@ This high-level procedure is useful to validate any knowledge base expressed in 
 
 ## Transformation
 
-We can also be interested in transforming a well-formed XML document [NOTA: ben formato rispetto a cosa? Se fosse rispetto ai tipi dell'ontologia in cui vogliamo trasformarlo non ci sarebbe bisogno di trasformarlo...] into an ontology of a given CDuce type. 
+We can also be interested in transforming a generically well-formed XML document into an ontology of a given CDuce type. 
 
-We start from the hypothesis that the document contains both compatible and non-compatible elements with respect the target type. We will then select all the compatible elements by using 'transform' [NOTA: il lettore non sa cos'è...] and/or queries/projections. This selection can be performed at different levels of depth:
+We start from the hypothesis that the document contains both compatible and non-compatible elements with respect the target type. 
 
-- by selecting only classes, individuals and relationships that respects the description given by the CDuce type;
+The selection of elements can be performed at different levels of depth, taking in account that the compatible elements can be extracted by using a CDuce operation called 'transform' and/or by queries/projections. We can:
 
-- by selecting only attributes that respects the description given by the CDuce type: in this case, we start from a class/individual/relationship that owns both admissible and non-admissible attributes and we extract a structure containg compatible attributes only;
+- Select only classes, individuals and relationships that respect the description given by the CDuce type.
 
-- by selecting all the elements, compatible and non-compatible, the latter to be made compatible with appropriate transformations.
+- Select only attributes that respects the description given by the CDuce type: in this case, we start from a class/individual/relationship that owns both admissible and non-admissible attributes and we extract a structure containg compatible attributes only.
 
-The procedure of Transformation allows the developer to start from a knowledge base which is not compatible with respect to a CDuce type (partially or totally) and to obtain an ontology matching completely the CDuce type.
+- Select all the elements, compatible and non-compatible ones, the latter to be made compatible with appropriate transformations.
+
+The procedure of Transformation allows the developer to start from a knowledge base which is not compatible with respect to a CDuce type (partially or totally) and to obtain an ontology matching the CDuce type totally.
 
 
 ## Conclusions
 
-Both Validation and Transformation are supported by the $\mathbb{C}$Duce static type checking, that guarantees a formal soundness with respect to the sought types of the transformations and of the results obtained.
+Both Validation and Transformation are supported by the $\mathbb{C}$Duce static type checking, that guarantees a formal soundness of the transformations and of the results obtained, with respect to the sought types.
 
 
